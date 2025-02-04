@@ -1,6 +1,5 @@
 import pandas as pd
 
-# Пример данных
 data = {
     'date': ['2023-10-01', '2023-10-02', '2023-10-03'],  # Даты продаж
     'product_id': [101, 102, 103],  # Идентификаторы продуктов
@@ -8,9 +7,8 @@ data = {
     'revenue': [300, 500, 200]  # Выручка от продажи каждого продукта
 }
 
-
-# Создаем DataFrame
+# DataFrame
 df = pd.DataFrame(data)
 
-# Сохраняем в CSV
+# CSV
 df.to_csv('sales_data.csv', index=False)
